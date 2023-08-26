@@ -17,50 +17,11 @@
     </head>
     <body class="antialiased">        
         <div class="container justify-content-center comment-container">  
-            <div class="left-svg">                
-                <svg width="305" height="683" viewBox="0 0 305 683" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_f_261_79)">
-                        <path d="M-15.8786 577.847C-124.32 580.977 -272.38 468.59 -275.507 360.275C-278.634 251.96 -211.086 168 -102.645 164.869C5.79696 161.739 137.139 221.841 140.266 330.155C143.393 438.47 92.5631 574.716 -15.8786 577.847Z" fill="url(#paint0_linear_261_79)"/>
-                    </g>
-                    <defs>
-                        <filter id="filter0_f_261_79" x="-439.612" y="0.752808" width="744.013" height="741.158" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feGaussianBlur stdDeviation="82" result="effect1_foregroundBlur_261_79"/>
-                        </filter>
-                        <linearGradient id="paint0_linear_261_79" x1="102.11" y1="242.336" x2="-254.406" y2="473.276" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F82C2C"/>
-                            <stop offset="0.21875" stop-color="#EC874E"/>
-                            <stop offset="0.385417" stop-color="#E78B20"/>
-                            <stop offset="0.5625" stop-color="#6C3DF4"/>
-                            <stop offset="0.770833" stop-color="#FF2633"/>
-                            <stop offset="1" stop-color="#FF1818"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
+            <div class="left-svg">          
+                <img src="{{ asset('images/left.svg') }}" alt="Logo">                           
             </div>   
             <div class="right-svg">
-                <svg width="246" height="653" viewBox="0 0 246 653" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_f_261_3)">
-                        <path d="M424.121 488.847C315.68 491.977 167.62 379.59 164.493 271.275C161.366 162.96 228.914 78.9999 337.355 75.8692C445.797 72.7386 577.139 132.841 580.266 241.155C583.393 349.47 532.563 485.716 424.121 488.847Z" fill="url(#paint0_linear_261_3)"/>
-                    </g>
-                    <defs>
-                        <filter id="filter0_f_261_3" x="0.388428" y="-88.2473" width="744.013" height="741.158" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feGaussianBlur stdDeviation="82" result="effect1_foregroundBlur_261_3"/>
-                        </filter>
-                        <linearGradient id="paint0_linear_261_3" x1="542.11" y1="153.336" x2="185.594" y2="384.276" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#F82C2C"/>
-                            <stop offset="0.21875" stop-color="#EC874E"/>
-                            <stop offset="0.385417" stop-color="#E78B20"/>
-                            <stop offset="0.5625" stop-color="#6C3DF4"/>
-                            <stop offset="0.770833" stop-color="#FF2633"/>
-                            <stop offset="1" stop-color="#FF1818"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-
+                <img src="{{ asset('images/right.svg') }}" alt="Logo">                
             </div>
             @livewire('comments')                 
         </div>
