@@ -39,6 +39,7 @@
 }
 .comment-column{
     padding-bottom: 30px;
+    min-width: 250px;
 }
 .comment-row{
     align-content: center;
@@ -96,8 +97,7 @@ p.description::first-letter {
     }
 }
 @media (max-width: 765px){
-    .comment-container{
-        background-image: url('../images/background.jpg');
+    .comment-container{        
         background-position: top left;
         background-size: contain;      
         padding-top: 112px;
