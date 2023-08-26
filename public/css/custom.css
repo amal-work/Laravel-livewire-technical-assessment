@@ -1,0 +1,107 @@
+/* comments box css start*/
+@font-face {
+    font-family: DM Sans;
+    src: url('../fonts/DMSans-Regular.ttf');
+}
+@font-face {
+    font-family: Space Grotesk;
+    src: url('../fonts/SpaceGrotesk-Regular.ttf');
+}
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter-Regular.ttf');
+}
+.checked {
+    color: #EE9F00;
+}
+
+.comment-container{
+    padding: 6%;
+    background-color: #FFF1E8;    
+    min-height: 100vh;
+    display: flex;         
+    position: relative;
+}
+.right-svg{
+    position: absolute;
+    top: 0;
+    right: 1px;
+}
+.left-svg{
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+}
+.comment_box{
+    border: 2px solid #111;
+    background: var(--01, #FFF);
+    padding: 30px;
+}
+.comment-column{
+    padding-bottom: 30px;
+}
+.comment-row{
+    align-content: center;
+}
+.comment_user{
+    display: flex;
+    padding-top: 40px;
+}
+p.description::first-letter {
+    text-transform: uppercase;
+  }
+.comment_user .pic{
+    overflow: hidden;
+    width: 20px;
+    border-radius: 50%;
+}
+.comment_user .member-info{
+    padding-left: 11px;    
+}
+.comment_user .member-info h4{
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.comment_user .member-info span{
+    font-family: Space Grotesk;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+.comment_user .pic{
+    border-radius: 43px;    
+    width: 43px;    
+    height: 43px;
+    background-position: center center;
+    background-size: contain;
+    float: left;
+}
+.description{
+    color: rgba(17, 17, 17, 0.80);
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-top: 30px;
+}
+@media (min-width: 1200px){
+    .comment-container{
+        max-width: 1440px;
+    }
+}
+@media (max-width: 765px){
+    .comment-container{
+        background-image: url('../images/background.jpg');
+        background-position: top left;
+        background-size: contain;      
+        padding-top: 112px;
+    }
+}
+/* comments box css end*/
+
